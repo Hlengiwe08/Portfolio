@@ -130,6 +130,7 @@ nav a:hover, nav a.active {
 .experience-list li,
 .services-list li,
 .contact-list li {
+  list-style-type: none;
   background: #f9f9f9;
   margin-bottom: 20px;
   padding: 20px;
