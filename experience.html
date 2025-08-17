@@ -3,49 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap CSS via CDN -->
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>Hlengiwe Mazibuko | Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <title>Experience | Hlengiwe Mazibuko</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="experience-page">
-    <div class="page-container">
+<body class="experience-page d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Hlengiwe Mazibuko</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item"><a class="nav-link active" href="experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-<main class="experience-section">
-  <section class="experience">
-    <h1>Experience & Projects</h1>
-    <p>While I have not been formally employed, I have worked on several projects as part of my learnership, including:</p>
-    <ul class="experience-list">
-      <li>A web-based Z83 form submission platform- still in progress (team project)</li>
-      <li>Personal portfolio website (this one!)</li>
-      <li>Newspaper website</li>
-      <li>Beauty Bar website (team project)</li>
-    </ul>
-  </section>
-   <div class="navigation">
-      <a href="education.html">← Previous Page</a>
-   </div>
-</main>
-  <footer>
-    <p><i class="fa fa-map-marker"></i> Johannesburg</p>
-    <p><i class="fa fa-phone"></i> +27 66 005 5573</p>
-    <p>© 2025 Hlengiwe Mazibuko. All rights reserved.</p>
+
+  <!-- EXPERIENCE SECTION -->
+  <main class="flex-grow-1">
+    <section class="experience-section py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">Experience & Projects</h2>
+            <p class="text-muted">Projects completed during my learnership and personal work</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <img src="z83.jpg" class="card-img-top" alt="Z83 Project">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Z83 Form Submission Platform</h5>
+                <p class="text-muted mb-0">Team project (In Progress)</p>
+              </div>
+              <div class="project-info">
+                <p>A collaborative web platform to submit Z83 forms digitally. Focused on user-friendly forms, validation, and responsive design. Built using HTML, CSS, JS, and Bootstrap.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <img src="portfolio.jpg" class="card-img-top" alt="Portfolio Project">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Personal Portfolio Website</h5>
+                <p class="text-muted mb-0">This site!</p>
+              </div>
+              <div class="project-info">
+                <p>Developed a multi-page portfolio to showcase my skills, education, and projects. Features responsive design, interactive elements, and clean layout using Bootstrap and custom CSS.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <img src="newspaper.jpg" class="card-img-top" alt="Newspaper Project">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Newspaper Website</h5>
+                <p class="text-muted mb-0">Personal project</p>
+              </div>
+              <div class="project-info">
+                <p>Designed a responsive newspaper-style website. Focused on content layout, readability, and navigation. Implemented multiple pages with HTML, CSS, and basic JS.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <img src="beautybar.jpg" class="card-img-top" alt="Beauty Bar Project">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Beauty Bar Website</h5>
+                <p class="text-muted mb-0">Team project</p>
+              </div>
+              <div class="project-info">
+                <p>A team project creating a website for a beauty bar business. Focused on aesthetics, responsive design, and user navigation. Used HTML, CSS, and Bootstrap for layout and styling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 text-center">
+          <a href="education.html" class="btn btn-outline-primary"><i class="fa fa-arrow-left"></i> Back to Education</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-3 mt-auto">
+    <div class="container">
+      <p><i class="fa fa-map-marker"></i> Johannesburg</p>
+      <p><i class="fa fa-phone"></i> +27 66 005 5573</p>
+      <p>© 2025 Hlengiwe Mazibuko. All rights reserved.</p>
+    </div>
   </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
