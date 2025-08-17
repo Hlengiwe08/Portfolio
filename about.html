@@ -3,48 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap CSS via CDN -->
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <title>About | Hlengiwe Mazibuko</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Hlengiwe Mazibuko</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-<main>
-  <section class="about-section">
-    <div class="about-container">
-      <img src="about image.jpg" alt="Photo" class="about-image" />
-      <div class="about-text">
-        <p>
-          I am an aspiring software developer, currently enrolled in an 18-month Software Development Learnership with GirlCode, I am a passionate and driven individual with a background in Social Sciences, majoring in Psychology and Criminology. My interest in tech stems from a desire to solve real-world problems, particularly those affecting under-resourced communities like Diepsloot, where I live. Having grown up in rural areas and later moving to Diepsloot after the passing of my grandmother, I developed a strong sense of resilience and a purpose rooted in community upliftment. I am especially drawn to the intersection of technology, behavioral science, and social impact. My learning journey includes furthering my skills in data science and web development, while exploring topics such as forensic psychology. I am currently working on a community-centered project aimed at creating a digital Z83 job application platform with other group members from GirlCode. My goal is to become a versatile developer who builds inclusive, ethical, and impactful digital solutions.
-        </p>
+
+  <!-- ABOUT SECTION -->
+  <main class="flex-grow-1">
+    <section class="about-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image -->
+          <div class="col-md-5 mb-4 mb-md-0 text-center">
+            <img src="about image.jpg" alt="Hlengiwe Mazibuko" class="img-fluid rounded shadow-lg about-image" />
+          </div>
+
+          <!-- Text -->
+          <div class="col-md-7">
+            <h2 class="fw-bold mb-4">About Me</h2>
+            <p class="lead">
+              I am an aspiring software developer, currently enrolled in an 18-month Software Development Learnership with GirlCode. 
+              I bring a background in Social Sciences, majoring in Psychology and Criminology, and a passion for technology’s potential to 
+              solve real-world problems. Growing up in rural areas and later moving to Diepsloot after the passing of my grandmother 
+              taught me resilience and gave me a purpose rooted in community upliftment.
+            </p>
+            <p>
+              I am especially drawn to the intersection of technology, behavioral science, and social impact. My journey includes furthering 
+              my skills in data science and web development, while exploring forensic psychology. Currently, I’m collaborating on a 
+              community-centered project to create a digital Z83 job application platform with fellow GirlCode learners. 
+              My goal is to become a versatile developer who builds inclusive, ethical, and impactful digital solutions.
+            </p>
+            <div class="mt-4">
+              <a href="index.html" class="btn btn-outline-primary"><i class="fa fa-arrow-left"></i> Back to Home</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- MISSION, VISION & GOALS SECTION -->
+    <section class="mission-vision-goals py-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">Mission, Vision & Goals</h2>
+            <p class="text-muted">What drives me as a developer and changemaker</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <!-- Mission -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="fa fa-bullseye fa-2x text-primary mb-3"></i>
+                <h5 class="fw-bold">Mission</h5>
+                <p>
+                  To use technology and human-centered design to create inclusive solutions that empower under-resourced communities and support mental health awareness.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Vision -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="fa fa-eye fa-2x text-success mb-3"></i>
+                <h5 class="fw-bold">Vision</h5>
+                <p>
+                  To become a versatile developer and changemaker who bridges psychology and technology, building impactful tools that inspire hope, equity, and opportunity.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Goals -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="fa fa-flag fa-2x text-danger mb-3"></i>
+                <h5 class="fw-bold">Goals</h5>
+                <ul class="list-unstyled">
+                  <li>✔ Grow as a full-stack developer</li>
+                  <li>✔ Contribute to women empowerment and mental health initiatives</li>
+                  <li>✔ Build digital tools for social good</li>
+                  <li>✔ Continue learning in tech until I find my niche</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-3 mt-auto">
+    <div class="container">
+      <p><i class="fa fa-map-marker"></i> Johannesburg</p>
+      <p><i class="fa fa-phone"></i> +27 66 005 5573</p>
+      <p>© 2025 Hlengiwe Mazibuko. All rights reserved.</p>
     </div>
-  </section>
-   <div class="navigation">
-      <a href="index.html">← Previous Page</a>
-   </div>
-</main>
-  <footer>
-    <p><i class="fa fa-map-marker"></i> Johannesburg</p>
-    <p><i class="fa fa-phone"></i> +27 66 005 5573</p>
-    <p>© 2025 Hlengiwe Mazibuko. All rights reserved.</p>
   </footer>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
